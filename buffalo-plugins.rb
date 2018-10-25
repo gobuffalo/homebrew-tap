@@ -1,9 +1,9 @@
 class BuffaloPlugins < Formula
   desc ""
   homepage ""
-  url "https://github.com/gobuffalo/buffalo-plugins/releases/download/v1.6.3/buffalo-plugins_1.6.3_darwin_amd64.tar.gz"
-  version "1.6.3"
-  sha256 "5a0952b19a48a6e2c65e1d032aa386c4781990081a22309e3f188b6d08efa4fd"
+  url "https://github.com/gobuffalo/buffalo-plugins/releases/download/v1.6.4/buffalo-plugins_1.6.4_darwin_amd64.tar.gz"
+  version "1.6.4"
+  sha256 "5161a893beb0e2b6de7f70877344ec526a69a0eaaff95b469777e28353a62f94"
 
   def install
     bin.install "buffalo-plugins"
