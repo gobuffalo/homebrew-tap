@@ -1,9 +1,9 @@
 class Plush < Formula
   desc ""
   homepage ""
-  url "https://github.com/gobuffalo/plush/releases/download/v3.7.21/plush_3.7.21_darwin_amd64.tar.gz"
-  version "3.7.21"
-  sha256 "e1aae2172cf7a3f0580c4c26fd2af4f936009dc4d4d2a4606325f8d54eb5954d"
+  url "https://github.com/gobuffalo/plush/releases/download/v3.7.22/plush_3.7.22_darwin_amd64.tar.gz"
+  version "3.7.22"
+  sha256 "d47c9d7df4ac03a9b6d81d27aaada5d0b4e847247948713580c9a20662364281"
 
   def install
     bin.install "plush"
