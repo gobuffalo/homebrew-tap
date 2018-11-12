@@ -1,9 +1,9 @@
 class Buffalo < Formula
   desc "A Go web development eco-system, designed to make your life easier."
   homepage "https://gobuffalo.io"
-  url "https://github.com/gobuffalo/buffalo/releases/download/v0.13.4/buffalo_0.13.4_darwin_amd64.tar.gz"
-  version "0.13.4"
-  sha256 "75f86821ca06858aabf1281437e52603997350e2c2d93988a4745c769dc9c8e1"
+  url "https://github.com/gobuffalo/buffalo/releases/download/v0.13.5/buffalo_0.13.5_darwin_amd64.tar.gz"
+  version "0.13.5"
+  sha256 "e8dd1f0b72daffd77a873b5c22a2f199fc82881ef6f61e88891c00ce77198c6f"
 
   def install
     bin.install "buffalo-no-sqlite"
