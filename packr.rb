@@ -3,7 +3,7 @@ class Packr < Formula
   homepage ""
   url "https://github.com/gobuffalo/packr/releases/download/v1.21.7/packr_1.21.7_darwin_amd64.tar.gz"
   version "1.21.7"
-  sha256 "b3f1b5198b725ae4ead473686df998ba2010a30009ee1703584bea8047a7b9ee"
+  sha256 "45a6f8d237f34ccaa8d35b4787e74f7590852908659aa0695a785a1d8601717c"
 
   def install
     bin.install "packr"
