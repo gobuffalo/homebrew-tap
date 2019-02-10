@@ -1,9 +1,9 @@
 class Release < Formula
   desc "A tool for releasing new tools from the Buffalo eco-system."
   homepage "https://github.com/gobuffalo/release"
-  url "https://github.com/gobuffalo/release/releases/download/v1.1.6/release_1.1.6_darwin_amd64.tar.gz"
-  version "1.1.6"
-  sha256 "efd6ce830f1d9f6d9b75a7de792a61ab5db784a1199479e2e737f75e6df88f41"
+  url "https://github.com/gobuffalo/release/releases/download/v1.1.7/release_1.1.7_darwin_amd64.tar.gz"
+  version "1.1.7"
+  sha256 "44c638722550303fbca236cd35545dbc843567a53a7e55cecbe593d85956b3dd"
 
   def install
     bin.install "release"
