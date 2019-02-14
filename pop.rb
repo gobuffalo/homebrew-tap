@@ -1,9 +1,9 @@
 class Pop < Formula
   desc ""
   homepage ""
-  url "https://github.com/gobuffalo/pop/releases/download/v4.9.6/pop_4.9.6_darwin_amd64.tar.gz"
-  version "4.9.6"
-  sha256 "d56e94cb6ffc28a611a26e213aaff43fd4e05f4bdfd05f6cd0c052b1f69223d9"
+  url "https://github.com/gobuffalo/pop/releases/download/v4.9.7/pop_4.9.7_darwin_amd64.tar.gz"
+  version "4.9.7"
+  sha256 "0c322a69d8cee75e2b743ebf8ea1bde40590f77b11cf72e79449d3130a1030d0"
 
   def install
     bin.install "soda"
