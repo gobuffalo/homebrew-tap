@@ -2,9 +2,9 @@
 class BuffaloPop < Formula
   desc ""
   homepage ""
-  url "https://github.com/gobuffalo/buffalo-pop/releases/download/v1.7.0/buffalo-pop_1.7.0_darwin_amd64.tar.gz"
-  version "1.7.0"
-  sha256 "523a06f380031334000a0364697aa2678200501f3f86950e7ba9c29b5e655d11"
+  url "https://github.com/gobuffalo/buffalo-pop/releases/download/v1.8.0/buffalo-pop_1.8.0_darwin_amd64.tar.gz"
+  version "1.8.0"
+  sha256 "bbea2f3f7c91db6ae073fe55ddf6e5b14339dda0f1b3ae61866b329f364156de"
 
   def install
     bin.install "buffalo-pop"
