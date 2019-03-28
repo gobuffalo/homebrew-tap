@@ -1,9 +1,9 @@
 class Clara < Formula
   desc ""
   homepage ""
-  url "https://github.com/gobuffalo/clara/releases/download/v0.3.1/clara_0.3.1_darwin_amd64.tar.gz"
-  version "0.3.1"
-  sha256 "3763d124922a3a14fc192ddd87c860c799c9b83f190908b793c7e4f25a7e4d56"
+  url "https://github.com/gobuffalo/clara/releases/download/v0.3.2/clara_0.3.2_darwin_amd64.tar.gz"
+  version "0.3.2"
+  sha256 "84827e15d6cf56ac5a9b1e90658a294fe32d089cd8fc131ccc3fa28f4c8e7f37"
 
   def install
     bin.install "clara"
