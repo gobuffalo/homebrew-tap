@@ -1,11 +1,11 @@
 class Packr < Formula
   desc ""
   homepage ""
-  url "https://github.com/gobuffalo/packr/releases/download/v1.24.1/packr_1.24.1_darwin_amd64.tar.gz"
-  version "1.24.1"
-  sha256 "a74d75f12675c46a9add7f5507e97353d94725cc7df240bd8cfd97f6b821c479"
+  url "https://github.com/gobuffalo/packr/releases/download/v2.1.0/packr_2.1.0_darwin_amd64.tar.gz"
+  version "2.1.0"
+  sha256 "39ec654ba4cf7e6af56b6847f82af639def5d2d85fb97b7cebdef7a740be03f5"
 
   def install
-    bin.install "packr"
+    bin.install "packr2"
   end
 end
