@@ -1,9 +1,9 @@
 class Genny < Formula
   desc ""
   homepage ""
-  url "https://github.com/gobuffalo/genny/releases/download/v0.2.0/genny_0.2.0_darwin_amd64.tar.gz"
-  version "0.2.0"
-  sha256 "e7720bd14341f111d58aa9606ce3d985cefe7af267cffe45d2212edc30a7670c"
+  url "https://github.com/gobuffalo/genny/releases/download/v0.3.0/genny_0.3.0_darwin_amd64.tar.gz"
+  version "0.3.0"
+  sha256 "be1db9c07c65590c798f8c987637ad74eea93cbc962071374bd8412e10fa820a"
 
   def install
     bin.install "genny"
