@@ -1,9 +1,9 @@
 class Release < Formula
   desc ""
   homepage ""
-  url "https://github.com/gobuffalo/release/releases/download/v1.8.0/release_1.8.0_darwin_amd64.tar.gz"
-  version "1.8.0"
-  sha256 "7c8ba58e54811a8aa014a30f1baa4b98737c012bf4910839c112e84a6d82e4de"
+  url "https://github.com/gobuffalo/release/releases/download/v1.8.1/release_1.8.1_darwin_amd64.tar.gz"
+  version "1.8.1"
+  sha256 "f3704902186a5de7efb05f3e7e29f39e5dce6ed5bfd4e53309d108a0d4e56d1b"
 
   def install
     bin.install "release"
