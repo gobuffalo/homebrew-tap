@@ -1,9 +1,9 @@
 class Here < Formula
   desc ""
   homepage ""
-  url "https://github.com/gobuffalo/here/releases/download/v0.1.5/here_0.1.5_darwin_amd64.tar.gz"
-  version "0.1.5"
-  sha256 "da5d156430b6bc4d59b4ef37288d4452bb99881898b552262a7629417bd76758"
+  url "https://github.com/gobuffalo/here/releases/download/v0.2.0/here_0.2.0_darwin_amd64.tar.gz"
+  version "0.2.0"
+  sha256 "d9d380c749785897333bf41705d8a4c3f7aab8940cef7aee090e13901537d2b9"
 
   def install
     bin.install "here"
