@@ -3,7 +3,7 @@ class Pop < Formula
   homepage ""
   url "https://github.com/gobuffalo/pop/releases/download/v4.11.3/pop_4.11.3_darwin_amd64.tar.gz"
   version "4.11.3"
-  sha256 "863cc597422337b3ad26695f7aef926f23b1a582f797e87e4633ee2565e07c9d"
+  sha256 "92b228cb76c1284053989dacf3779fae0c6bdcc2867b29b5592e928866eee2dd"
 
   def install
     bin.install "soda"
