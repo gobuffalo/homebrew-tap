@@ -2,17 +2,20 @@
 class Packr < Formula
   desc ""
   homepage ""
-  version "2.5.2"
+  version "2.5.3"
+  bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gobuffalo/packr/releases/download/v2.5.2/packr_2.5.2_darwin_amd64.tar.gz"
-    sha256 "b774c756f8f3b0a7b5d3c38e4c3e3e91ca72c31006628d5b11d6482230594919"
+    url "https://github.com/gobuffalo/packr/releases/download/v2.5.3/packr_2.5.3_darwin_amd64.tar.gz"
+    sha256 "0795e4b3b97eab526ba2313fe96e94dda1883529adc35736b975b39f52602363"
   elsif OS.linux?
-    url "https://github.com/gobuffalo/packr/releases/download/v2.5.2/packr_2.5.2_linux_amd64.tar.gz"
-    sha256 "457cd4be79d8007e06547db083a7cd46359c8753015c4ed6643294e10f11458b"
+    if Hardware::CPU.intel?
+      url "https://github.com/gobuffalo/packr/releases/download/v2.5.3/packr_2.5.3_linux_amd64.tar.gz"
+      sha256 "558ed39913241d277b031d968cf473e42e3982e36859ab1fb073f49d246246e8"
+    end
   end
 
   def install
-    bin.install "packr2"
+    bin.install "packr"
   end
 end
