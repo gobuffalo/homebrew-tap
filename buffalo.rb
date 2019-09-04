@@ -2,24 +2,24 @@
 class Buffalo < Formula
   desc "A Go web development eco-system, designed to make your life easier."
   homepage "https://gobuffalo.io"
-  version "0.14.10"
+  version "1.20.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gobuffalo/buffalo/releases/download/v0.14.10/buffalo_0.14.10_darwin_amd64.tar.gz"
-    sha256 "8b965c84f1b10ce4baca3b0a41970eaa7a424a62d13b8d133f767bf6f7dea605"
+    url "https://github.com/gobuffalo/buffalo-pop/releases/download/v1.20.1/buffalo-pop_1.20.1_darwin_amd64.tar.gz"
+    sha256 "ea66638399a146be158ac9d4e794316ff58192a2e8a45553431a30d20a33b7b8"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/gobuffalo/buffalo/releases/download/v0.14.10/buffalo_0.14.10_linux_amd64.tar.gz"
-      sha256 "5305c90801a2520ac71a5205304c68cea6ce0f4a197dbb89e362a6e02cf0c6ca"
+      url "https://github.com/gobuffalo/buffalo-pop/releases/download/v1.20.1/buffalo-pop_1.20.1_linux_amd64.tar.gz"
+      sha256 "bab4af260a5aa52d7cf693011351aefbef6f2869fef0dfeb696efc89aee294ab"
     end
   end
 
   def install
-    bin.install "buffalo"
+    bin.install "buffalo-pop"
   end
 
   test do
-    system "#{bin}/buffalo", "version"
+    system "#{bin}/buffalo-pop", "version"
   end
 end
