@@ -2,16 +2,16 @@
 class Licenser < Formula
   desc ""
   homepage ""
-  version "1.3.0"
+  version "1.4.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gobuffalo/licenser/releases/download/v1.3.0/licenser_1.3.0_darwin_amd64.tar.gz"
-    sha256 "13961d9bc296b951e3c516b4396ae2aee0beb894e08c5750362039a9d3edb702"
+    url "https://github.com/gobuffalo/licenser/releases/download/v1.4.0/licenser_1.4.0_darwin_amd64.tar.gz"
+    sha256 "e62171a96a6c4634a65da0f558b4a36711981aef6097851d0b19c2e0f311e1f3"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/gobuffalo/licenser/releases/download/v1.3.0/licenser_1.3.0_linux_amd64.tar.gz"
-      sha256 "faf280d5189c344ae2b008b60d075ef70b1062d54a979fe7b34df9cd51197b41"
+      url "https://github.com/gobuffalo/licenser/releases/download/v1.4.0/licenser_1.4.0_linux_amd64.tar.gz"
+      sha256 "3a0400bc0cee83efcaa2f639f437a5bb679ebcaba76d0d33d3b89468df6718d9"
     end
   end
 
