@@ -2,16 +2,16 @@
 class Release < Formula
   desc ""
   homepage ""
-  version "1.12.0"
+  version "1.13.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gobuffalo/release/releases/download/v1.12.0/release_1.12.0_darwin_amd64.tar.gz"
-    sha256 "3152a68ffdb3b5072ede2bbdb78127f885a9a7e1a15aa94dff5903785a5ebfbb"
+    url "https://github.com/gobuffalo/release/releases/download/v1.13.0/release_1.13.0_darwin_amd64.tar.gz"
+    sha256 "99c27cb4dae797ad0bd2270cdee9533c970d4cfc10b685594abdd99b51edf389"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/gobuffalo/release/releases/download/v1.12.0/release_1.12.0_linux_amd64.tar.gz"
-      sha256 "4234f6505a32a45abe1c2de75b46000ea4b861e3269a6f091fb0469d07eb0371"
+      url "https://github.com/gobuffalo/release/releases/download/v1.13.0/release_1.13.0_linux_amd64.tar.gz"
+      sha256 "0e013099e75e0f9cabe1f6afdcbb7a85b996338e4667a75427dd099f40eb2bc4"
     end
   end
 
