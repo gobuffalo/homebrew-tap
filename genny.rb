@@ -2,16 +2,16 @@
 class Genny < Formula
   desc ""
   homepage ""
-  version "0.4.0"
+  version "0.4.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gobuffalo/genny/releases/download/v0.4.0/genny_0.4.0_darwin_amd64.tar.gz"
-    sha256 "7afc4fd28efec307ce8db131cc6fcdc210353052beb20a7d63f09d596b480843"
+    url "https://github.com/gobuffalo/genny/releases/download/v0.4.1/genny_0.4.1_darwin_amd64.tar.gz"
+    sha256 "cf2fd8137426e7108f4ed0ede0f87f5321d3a0338e6766ac53cc3fcb4fd039cf"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/gobuffalo/genny/releases/download/v0.4.0/genny_0.4.0_linux_amd64.tar.gz"
-      sha256 "8a59baa087471ced529cdbc19ca8c08743fb008dbdf09e57ee9ea88646402911"
+      url "https://github.com/gobuffalo/genny/releases/download/v0.4.1/genny_0.4.1_linux_amd64.tar.gz"
+      sha256 "a203598cdfbbb42cfa521f2d84d5e6d53674da4d8108434d61fd4365e96bdd11"
     end
   end
 
