@@ -2,16 +2,16 @@
 class BuffaloHeroku < Formula
   desc ""
   homepage ""
-  version "1.0.8"
+  version "1.0.9"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gobuffalo/buffalo-heroku/releases/download/v1.0.8/buffalo-heroku_1.0.8_darwin_amd64.tar.gz"
-    sha256 "42549c0e2f295e33552d99976354998505b97d683b3282042ad43e6fbb3d2bf7"
+    url "https://github.com/gobuffalo/buffalo-heroku/releases/download/v1.0.9/buffalo-heroku_1.0.9_darwin_amd64.tar.gz"
+    sha256 "a1b9ce9df3e5f923312b9dbe0689338d9eff5db092e15ca20ff1465855956f3e"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/gobuffalo/buffalo-heroku/releases/download/v1.0.8/buffalo-heroku_1.0.8_linux_amd64.tar.gz"
-      sha256 "8880dc6328384fda64cb4816c79e63b32b9e29ace1c6fce519ae9b780a3dd907"
+      url "https://github.com/gobuffalo/buffalo-heroku/releases/download/v1.0.9/buffalo-heroku_1.0.9_linux_amd64.tar.gz"
+      sha256 "f06d10c9032c90a3ea27f736dea0cd2e2494d66dfd46ae11a9993ed1d7952c9e"
     end
   end
 
