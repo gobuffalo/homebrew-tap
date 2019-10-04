@@ -2,16 +2,16 @@
 class Packr < Formula
   desc ""
   homepage ""
-  version "2.7.0"
+  version "2.7.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gobuffalo/packr/releases/download/v2.7.0/packr_2.7.0_darwin_amd64.tar.gz"
-    sha256 "37e5e01430450f8008118a5c3f02a0d4d40bdd947ce1650d693a2ecbbcdb9e4b"
+    url "https://github.com/gobuffalo/packr/releases/download/v2.7.1/packr_2.7.1_darwin_amd64.tar.gz"
+    sha256 "2cb79a2e8d59d44c1057538442010ef7bac5110506df5644635cf533b3bb4b79"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/gobuffalo/packr/releases/download/v2.7.0/packr_2.7.0_linux_amd64.tar.gz"
-      sha256 "8fdc6e550101159939c8f4d4414692d227154d2039bdf687fbae17f29c7d41c0"
+      url "https://github.com/gobuffalo/packr/releases/download/v2.7.1/packr_2.7.1_linux_amd64.tar.gz"
+      sha256 "165a2e862be7255a8c7bbe5ba6d7e9123d945b83a71267197799013d89c2a739"
     end
   end
 
