@@ -2,16 +2,16 @@
 class Buffalo < Formula
   desc "A Go web development eco-system, designed to make your life easier."
   homepage "https://gobuffalo.io"
-  version "0.15.0"
+  version "0.15.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gobuffalo/buffalo/releases/download/v0.15.0/buffalo_0.15.0_darwin_amd64.tar.gz"
-    sha256 "d9ba00e7c7e31bd24aa9696af78aebebf6c019cd75890b0742b6d6ebc5a5b36f"
+    url "https://github.com/gobuffalo/buffalo/releases/download/v0.15.1/buffalo_0.15.1_darwin_amd64.tar.gz"
+    sha256 "79616aa48a920358e8ff216a209f1053b16212853109247e6f69312df0cd5e68"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/gobuffalo/buffalo/releases/download/v0.15.0/buffalo_0.15.0_linux_amd64.tar.gz"
-      sha256 "873c6d0805eed76d8c7a6c129b7b18a6c4cc049c7d5db0257c5dc8e601d8cf5b"
+      url "https://github.com/gobuffalo/buffalo/releases/download/v0.15.1/buffalo_0.15.1_linux_amd64.tar.gz"
+      sha256 "c0668d16a03eb81c6df8f489b69a8ed14e1b030ccd32340550bb5e7671837541"
     end
   end
 
