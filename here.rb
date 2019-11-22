@@ -2,16 +2,16 @@
 class Here < Formula
   desc ""
   homepage ""
-  version "0.4.1"
+  version "0.4.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gobuffalo/here/releases/download/v0.4.1/here_0.4.1_darwin_amd64.tar.gz"
-    sha256 "129226a72fe1f8e6a88cf983a890ff5a436d6e49d221ba96c994094e433641f9"
+    url "https://github.com/gobuffalo/here/releases/download/v0.4.2/here_0.4.2_darwin_amd64.tar.gz"
+    sha256 "3823b766293f0b1bbb9834087bcf70d79460994d5900f2a278aba25b255108d7"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/gobuffalo/here/releases/download/v0.4.1/here_0.4.1_linux_amd64.tar.gz"
-      sha256 "113af799529b7519548dceccaeb9444404b95daccc22f6bc9a65c1409fffb378"
+      url "https://github.com/gobuffalo/here/releases/download/v0.4.2/here_0.4.2_linux_amd64.tar.gz"
+      sha256 "d1c2b2006816238dfb1cbdd21d09cb63e752b98bedbec6833dc274c9f4d645b4"
     end
   end
 
