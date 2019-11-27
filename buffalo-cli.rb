@@ -2,24 +2,24 @@
 class BuffaloCli < Formula
   desc ""
   homepage ""
-  version "0.4.0"
+  version "0.4.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gobuffalo/buffalo-cli/releases/download/v0.4.0/buffalo-cli_0.4.0_Darwin_x86_64.tar.gz"
-    sha256 "fa372a9d92cd4af861337731a36ce1f11b2d3b3e9364afa2bb5e3abae81ac58e"
+    url "https://github.com/gobuffalo/buffalo-cli/releases/download/v0.4.1/buffalo-cli_0.4.1_Darwin_x86_64.tar.gz"
+    sha256 "eca72b32d66f84ea39954f160657d48f6e84a299abbbcf8ca8110b63f4cac44c"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/gobuffalo/buffalo-cli/releases/download/v0.4.0/buffalo-cli_0.4.0_Linux_x86_64.tar.gz"
-      sha256 "4242b1ee55dde961b3ddff46ef6ba5a2dbf9b3ebf824f6d0fa118c8b3774ab17"
+      url "https://github.com/gobuffalo/buffalo-cli/releases/download/v0.4.1/buffalo-cli_0.4.1_Linux_x86_64.tar.gz"
+      sha256 "61e1d5c4baa8aeaf100d5fbf2d46d5fefbac4ae3b7a9ce00dc0fc192af9b8eaf"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gobuffalo/buffalo-cli/releases/download/v0.4.0/buffalo-cli_0.4.0_Linux_arm64.tar.gz"
-        sha256 "7391dfef4b4970b3bb24b4cb600497b85aaf31ef0ddcd302dff68479a858194e"
+        url "https://github.com/gobuffalo/buffalo-cli/releases/download/v0.4.1/buffalo-cli_0.4.1_Linux_arm64.tar.gz"
+        sha256 "0c79f9090eda56888cb25a5b56f53e13a69dc785d8d298ea1e561b6a660e4b2a"
       else
-        url "https://github.com/gobuffalo/buffalo-cli/releases/download/v0.4.0/buffalo-cli_0.4.0_Linux_armv6.tar.gz"
-        sha256 "9f13ed9fd32c3ace1fefafad2e4836ec161df98949edf78f7fdb04c4c70feff3"
+        url "https://github.com/gobuffalo/buffalo-cli/releases/download/v0.4.1/buffalo-cli_0.4.1_Linux_armv6.tar.gz"
+        sha256 "6aeb97477d8c28f2ad5a715ee1e4efd93f20ff127d93c23dafa8d411a465d48d"
       end
     end
   end
