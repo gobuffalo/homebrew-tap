@@ -2,24 +2,24 @@
 class Here < Formula
   desc ""
   homepage ""
-  version "0.4.3"
+  version "0.5.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gobuffalo/here/releases/download/v0.4.3/here_0.4.3_Darwin_x86_64.tar.gz"
-    sha256 "7d86c0771154983826aeb1b33949064e91a188676d749838828ffd3c9f6e15a4"
+    url "https://github.com/gobuffalo/here/releases/download/v0.5.0/here_0.5.0_Darwin_x86_64.tar.gz"
+    sha256 "40804537fff0d06a826365944bd74a462c65568a3dc3c7892ec2f4be91a6a606"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/gobuffalo/here/releases/download/v0.4.3/here_0.4.3_Linux_x86_64.tar.gz"
-      sha256 "0fff008f971a110d4beeaac9502cf762471bd727b5a23f54bba8ab0bed3196aa"
+      url "https://github.com/gobuffalo/here/releases/download/v0.5.0/here_0.5.0_Linux_x86_64.tar.gz"
+      sha256 "99e04ceeeb91506954e7599ec06d4bc1bb55f2a1dcf5b5bbf128676a96d90781"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gobuffalo/here/releases/download/v0.4.3/here_0.4.3_Linux_arm64.tar.gz"
-        sha256 "098d067da76f43f3b992947215c77896d3bbc61a2f75da20bb9ee5c974654931"
+        url "https://github.com/gobuffalo/here/releases/download/v0.5.0/here_0.5.0_Linux_arm64.tar.gz"
+        sha256 "517e13a50751f6d7b1ef7059a2f063c33b7185e3c1a2e031368cf9d2e5217148"
       else
-        url "https://github.com/gobuffalo/here/releases/download/v0.4.3/here_0.4.3_Linux_armv6.tar.gz"
-        sha256 "f1e1a76ca61cfc798c8da0cf2ea98ffa145842ffbc757a265670c9845f398e7c"
+        url "https://github.com/gobuffalo/here/releases/download/v0.5.0/here_0.5.0_Linux_armv6.tar.gz"
+        sha256 "6c612d5ad9115455ef946cfab16fb3b26c588fa2298e919f03edfa0b7b2b1036"
       end
     end
   end
