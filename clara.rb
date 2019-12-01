@@ -2,16 +2,25 @@
 class Clara < Formula
   desc ""
   homepage ""
-  version "0.9.1"
+  version "0.10.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gobuffalo/clara/releases/download/v0.9.1/clara_0.9.1_darwin_amd64.tar.gz"
-    sha256 "0852f2c9f7c0c3d14602e6ea5811c0edeaeeac60c6fd9027a3acc40f8e2383d1"
+    url "https://github.com/gobuffalo/clara/releases/download/v0.10.1/clara_0.10.1_Darwin_x86_64.tar.gz"
+    sha256 "f684dee0add03516b3cc19d49a98c45a52c7c034a424b83afece110c7681ebf3"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/gobuffalo/clara/releases/download/v0.9.1/clara_0.9.1_linux_amd64.tar.gz"
-      sha256 "19bd4a7ba97471447192adb12e4d01a53640fb48683b9044ab5245f7104ab1b9"
+      url "https://github.com/gobuffalo/clara/releases/download/v0.10.1/clara_0.10.1_Linux_x86_64.tar.gz"
+      sha256 "b9dadd66215024baa1c144985c77fbe23cdc0e64cd201c74212e37d888d05ffa"
+    end
+    if Hardware::CPU.arm?
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/gobuffalo/clara/releases/download/v0.10.1/clara_0.10.1_Linux_arm64.tar.gz"
+        sha256 "e0d6d47eb9afa238b419d04e0721ccbc92712fe1a00218bbacb2456b599eadb5"
+      else
+        url "https://github.com/gobuffalo/clara/releases/download/v0.10.1/clara_0.10.1_Linux_armv6.tar.gz"
+        sha256 "2c0dbddd889089e655ee3c716ebb7f02da7c9824cbe986931384317536354770"
+      end
     end
   end
 
