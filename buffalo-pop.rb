@@ -2,14 +2,14 @@
 class BuffaloPop < Formula
   desc "Buffalo plugin to work with gobuffalo/pop"
   homepage ""
-  version "1.23.1"
+  version "2.0.0"
 
   if OS.mac?
-    url "https://github.com/gobuffalo/buffalo-pop/releases/download/v1.23.1/buffalo-pop_1.23.1_darwin_amd64.tar.gz"
-    sha256 "a8e53d2f8972ae8e05f8bfcb5e93c8bc3cf5e374e05a19935d07b38ece00dfe9"
+    url "https://github.com/gobuffalo/buffalo-pop/releases/download/v2.0.0/buffalo-pop_2.0.0_darwin_amd64.tar.gz"
+    sha256 "5f2d9b718c7ce7984531b49f0e5da90a9861d1068700c6a52f5e47312f4777dc"
   elsif OS.linux?
-    url "https://github.com/gobuffalo/buffalo-pop/releases/download/v1.23.1/buffalo-pop_1.23.1_linux_amd64.tar.gz"
-    sha256 "e1df6567caf79485b7609516cc456346029d1677f72d1269737a4211df6043b6"
+    url "https://github.com/gobuffalo/buffalo-pop/releases/download/v2.0.0/buffalo-pop_2.0.0_linux_amd64.tar.gz"
+    sha256 "d60f98d348206d477daf97cdb5033d1f9177615990ce9702ea86e60034d7d0e1"
   end
 
   def install
