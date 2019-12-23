@@ -2,24 +2,24 @@
 class Genny < Formula
   desc ""
   homepage ""
-  version "0.5.1"
+  version "0.5.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gobuffalo/genny/releases/download/v0.5.1/genny_0.5.1_Darwin_x86_64.tar.gz"
-    sha256 "67c0144cfaced7b24ea40cb984446a8a7eb6cbd667ea5c69f5ebd492f7972f01"
+    url "https://github.com/gobuffalo/genny/releases/download/v0.5.2/genny_0.5.2_Darwin_x86_64.tar.gz"
+    sha256 "f641553110f89f89c7e00c4f40b239e4830b0a69db9c84b8c862969dc4337198"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/gobuffalo/genny/releases/download/v0.5.1/genny_0.5.1_Linux_x86_64.tar.gz"
-      sha256 "93189967608fb74231ed6ce84d7e68e86c6d0a734367fa646690c1ae579db421"
+      url "https://github.com/gobuffalo/genny/releases/download/v0.5.2/genny_0.5.2_Linux_x86_64.tar.gz"
+      sha256 "7b1f8133ee02729495b7c92dee94341181f78e9c478c871478e6282ed8ad9075"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gobuffalo/genny/releases/download/v0.5.1/genny_0.5.1_Linux_arm64.tar.gz"
-        sha256 "58f5393a0dbea2cdf3ae954452e6c28f4c72da8a6287b666e260fa13ca55d703"
+        url "https://github.com/gobuffalo/genny/releases/download/v0.5.2/genny_0.5.2_Linux_arm64.tar.gz"
+        sha256 "3314a2514db1397319ddf630a76aa65df7cd83baa736f45d9563d92909e9f92a"
       else
-        url "https://github.com/gobuffalo/genny/releases/download/v0.5.1/genny_0.5.1_Linux_armv6.tar.gz"
-        sha256 "5e9a229274199844f645526310fcdb352c1ff0f0518247d1590ae97061004004"
+        url "https://github.com/gobuffalo/genny/releases/download/v0.5.2/genny_0.5.2_Linux_armv6.tar.gz"
+        sha256 "a38752204a7d5ec6b39f0165f3a164fbf1a28bf36fe73fa0d9f77d9f3bb1a070"
       end
     end
   end
