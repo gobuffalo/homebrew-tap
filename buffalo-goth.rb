@@ -2,24 +2,24 @@
 class BuffaloGoth < Formula
   desc ""
   homepage ""
-  version "1.2.0"
+  version "1.3.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gobuffalo/buffalo-goth/releases/download/v1.2.0/buffalo-goth_1.2.0_Darwin_x86_64.tar.gz"
-    sha256 "cab23cc19148829c0c83586e4cd8550ef0e0461f12e2afefdc0359f8793a1f97"
+    url "https://github.com/gobuffalo/buffalo-goth/releases/download/v1.3.0/buffalo-goth_1.3.0_Darwin_x86_64.tar.gz"
+    sha256 "39d16156029016889611d346e0c5962af5d69cc63b457997924af724ae9cc297"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/gobuffalo/buffalo-goth/releases/download/v1.2.0/buffalo-goth_1.2.0_Linux_x86_64.tar.gz"
-      sha256 "340bb6e34df5c5023f2c214d6f9b62d5046f3aa8211182e56bd13497c1847f0e"
+      url "https://github.com/gobuffalo/buffalo-goth/releases/download/v1.3.0/buffalo-goth_1.3.0_Linux_x86_64.tar.gz"
+      sha256 "d12131ff918bb58c45999dcd6ae98490539abe0a48efc0f248c0db3ab940b8b9"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gobuffalo/buffalo-goth/releases/download/v1.2.0/buffalo-goth_1.2.0_Linux_arm64.tar.gz"
-        sha256 "582c37284c44e84df90fd5b9eb19d331c39c49f54aa0121a8e4f03ba9ee4aec4"
+        url "https://github.com/gobuffalo/buffalo-goth/releases/download/v1.3.0/buffalo-goth_1.3.0_Linux_arm64.tar.gz"
+        sha256 "b70ed444320e4f050e460ba851e8bb4262bf849a07d5d1d0faf313bb3a727368"
       else
-        url "https://github.com/gobuffalo/buffalo-goth/releases/download/v1.2.0/buffalo-goth_1.2.0_Linux_armv6.tar.gz"
-        sha256 "3c18cc690eb8d36c2f39e36725d336fe6d28d845b0c0e951cfa99c0938ccb409"
+        url "https://github.com/gobuffalo/buffalo-goth/releases/download/v1.3.0/buffalo-goth_1.3.0_Linux_armv6.tar.gz"
+        sha256 "33c7f5e8fc3b7be96c0aa2fe0a59de187e7fa6bfe89e58ceda70854eb2b6a4c9"
       end
     end
   end
