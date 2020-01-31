@@ -2,24 +2,24 @@
 class BuffaloAuth < Formula
   desc ""
   homepage ""
-  version "1.2.0"
+  version "1.3.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gobuffalo/buffalo-auth/releases/download/v1.2.0/buffalo-auth_1.2.0_Darwin_x86_64.tar.gz"
-    sha256 "e6700341c96cda00927311dd34244386575fafef506c7645bd3d4b59bf4c386c"
+    url "https://github.com/gobuffalo/buffalo-auth/releases/download/v1.3.0/buffalo-auth_1.3.0_Darwin_x86_64.tar.gz"
+    sha256 "0e5873e7e0655f6d4b4a7294e9659435b2a55c9b2469ce82f5afc74c1784c0e8"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/gobuffalo/buffalo-auth/releases/download/v1.2.0/buffalo-auth_1.2.0_Linux_x86_64.tar.gz"
-      sha256 "8eca775c93e2c91847d28da05e0f73fbf154e9c506c599d89ff1783f19d91358"
+      url "https://github.com/gobuffalo/buffalo-auth/releases/download/v1.3.0/buffalo-auth_1.3.0_Linux_x86_64.tar.gz"
+      sha256 "7e9b8104e8050767d48bd397494aaccaae5a8f5daff365ff53f268a23ad94f04"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gobuffalo/buffalo-auth/releases/download/v1.2.0/buffalo-auth_1.2.0_Linux_arm64.tar.gz"
-        sha256 "01472ff8112da3874c339680107b20656fe56feb08cb5683baa6529c6605a4e8"
+        url "https://github.com/gobuffalo/buffalo-auth/releases/download/v1.3.0/buffalo-auth_1.3.0_Linux_arm64.tar.gz"
+        sha256 "e646a950067312b2b122da4111cc3d5aa818e2e4c8e3a469b79de6ff64d96cc7"
       else
-        url "https://github.com/gobuffalo/buffalo-auth/releases/download/v1.2.0/buffalo-auth_1.2.0_Linux_armv6.tar.gz"
-        sha256 "c8aaa089453cb5a8bd166cd19e8acc6d2ee0cddd93750468f68a9bfd14634108"
+        url "https://github.com/gobuffalo/buffalo-auth/releases/download/v1.3.0/buffalo-auth_1.3.0_Linux_armv6.tar.gz"
+        sha256 "a31c45277f46a91b1c5042109005efddc5169355b9c096db25d30253d2a00cf4"
       end
     end
   end
