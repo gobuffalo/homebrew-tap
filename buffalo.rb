@@ -2,24 +2,24 @@
 class Buffalo < Formula
   desc ""
   homepage ""
-  version "0.16.1"
+  version "0.16.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gobuffalo/buffalo/releases/download/v0.16.1/buffalo_0.16.1_Darwin_x86_64.tar.gz"
-    sha256 "a924b726cdabd6991a1b088df5406731581de1220ea35651b8419741b1eefad4"
+    url "https://github.com/gobuffalo/buffalo/releases/download/v0.16.2/buffalo_0.16.2_Darwin_x86_64.tar.gz"
+    sha256 "82c2e97a02216979153008b0846319ee698a38decbc01a0af3f713ca042406f9"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/gobuffalo/buffalo/releases/download/v0.16.1/buffalo_0.16.1_Linux_x86_64.tar.gz"
-      sha256 "c5c977169ae3e6b5b6c4228f61df5a28387c0527a90c968d1a6460d33c490d50"
+      url "https://github.com/gobuffalo/buffalo/releases/download/v0.16.2/buffalo_0.16.2_Linux_x86_64.tar.gz"
+      sha256 "32bf359f8fa0cd2558827124f6fb17ee13c0d24162cdf4f3fd180a50b1e756c4"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gobuffalo/buffalo/releases/download/v0.16.1/buffalo_0.16.1_Linux_arm64.tar.gz"
-        sha256 "a397816cd34a4bfa6c5f0595e83fdb7dbe93cef897c1a81ca4228d14ef405dfb"
+        url "https://github.com/gobuffalo/buffalo/releases/download/v0.16.2/buffalo_0.16.2_Linux_arm64.tar.gz"
+        sha256 "6ba575e01cef1a343d0931a71e8cb526e925cc26a424356fc729434f572a1f76"
       else
-        url "https://github.com/gobuffalo/buffalo/releases/download/v0.16.1/buffalo_0.16.1_Linux_armv6.tar.gz"
-        sha256 "4728a788976e6a661c48cbfdec59fc59c71b256e05cebdda596e36da73302164"
+        url "https://github.com/gobuffalo/buffalo/releases/download/v0.16.2/buffalo_0.16.2_Linux_armv6.tar.gz"
+        sha256 "c799da930ad6ddeea6aa57ca0df2d7f9c1c93e83c6a7667746b5138c77aef841"
       end
     end
   end
