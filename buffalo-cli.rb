@@ -2,24 +2,24 @@
 class BuffaloCli < Formula
   desc ""
   homepage ""
-  version "2.0.0-alpha.13"
+  version "2.0.0-alpha.14"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gobuffalo/buffalo-cli/releases/download/v2.0.0-alpha.13/buffalo-cli_2.0.0-alpha.13_Darwin_x86_64.tar.gz"
-    sha256 "c87ed9b7c1a94734d6adf02d374283ce1ab118e912be719c55b831396ad25062"
+    url "https://github.com/gobuffalo/buffalo-cli/releases/download/v2.0.0-alpha.14/buffalo-cli_2.0.0-alpha.14_Darwin_x86_64.tar.gz"
+    sha256 "396c4b98a3af76ebb7da0eacdc1f4fc82348abc9202e051572e0180fada3f420"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/gobuffalo/buffalo-cli/releases/download/v2.0.0-alpha.13/buffalo-cli_2.0.0-alpha.13_Linux_x86_64.tar.gz"
-      sha256 "1ebf8a5882b6a83e20392f34490864cca4ed5a9275e278ba0939e3c3d92d703b"
+      url "https://github.com/gobuffalo/buffalo-cli/releases/download/v2.0.0-alpha.14/buffalo-cli_2.0.0-alpha.14_Linux_x86_64.tar.gz"
+      sha256 "e0bc0eb2be57d21cf44c35b1cba4c5002225ae6ca749e494387f0ba7f37cb5cc"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gobuffalo/buffalo-cli/releases/download/v2.0.0-alpha.13/buffalo-cli_2.0.0-alpha.13_Linux_arm64.tar.gz"
-        sha256 "ab060162cdbf9860e95763a8ca998705a446d04bdd0f9aa838008242488e80bf"
+        url "https://github.com/gobuffalo/buffalo-cli/releases/download/v2.0.0-alpha.14/buffalo-cli_2.0.0-alpha.14_Linux_arm64.tar.gz"
+        sha256 "77dcb5fd9a5f22fa562743a0bc5827745c94f49311f8bf73c5182ffabf966127"
       else
-        url "https://github.com/gobuffalo/buffalo-cli/releases/download/v2.0.0-alpha.13/buffalo-cli_2.0.0-alpha.13_Linux_armv6.tar.gz"
-        sha256 "477361efb9730d6af7c123ed4ac2343beea2cb5e4e4fea06edd32f8dda30bd2e"
+        url "https://github.com/gobuffalo/buffalo-cli/releases/download/v2.0.0-alpha.14/buffalo-cli_2.0.0-alpha.14_Linux_armv6.tar.gz"
+        sha256 "4b1036ca34d6d43c1507bd52817b5de948bf4ebcd390ebeb497be895989d2c8d"
       end
     end
   end
