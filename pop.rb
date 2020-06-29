@@ -2,16 +2,16 @@
 class Pop < Formula
   desc "A Tasty Treat For All Your Database Needs"
   homepage "https://gobuffalo.io/docs/db/getting-started"
-  version "5.2.2"
+  version "5.2.3"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gobuffalo/pop/releases/download/v5.2.2/pop_5.2.2_darwin_amd64.tar.gz"
-    sha256 "c5aff36dd6bb30074b947e71197f4997536de9b077ad84e42033f37d09ef3c2f"
+    url "https://github.com/gobuffalo/pop/releases/download/v5.2.3/pop_5.2.3_darwin_amd64.tar.gz"
+    sha256 "a74449420d8443eac71016e61594dfa33eb74b88fe9534e4431bb68bdf18ad35"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/gobuffalo/pop/releases/download/v5.2.2/pop_5.2.2_linux_amd64.tar.gz"
-      sha256 "a708df3a4f131a03764ab3607c2f13268b966217d5b7fd5d034f8509a2ae839e"
+      url "https://github.com/gobuffalo/pop/releases/download/v5.2.3/pop_5.2.3_linux_amd64.tar.gz"
+      sha256 "a4809b474d299fb835ea0b5f19ce62d5d6900abe44ba886fa20def6a9c65886b"
     end
   end
 
