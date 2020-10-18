@@ -2,16 +2,16 @@
 class BuffaloPop < Formula
   desc "Buffalo plugin to work with gobuffalo/pop"
   homepage ""
-  version "2.2.0"
+  version "2.3.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gobuffalo/buffalo-pop/releases/download/v2.2.0/buffalo-pop_2.2.0_darwin_amd64.tar.gz"
-    sha256 "bf9ba1a88ccc4355380ac57090ff7bb58af0b58ee57fffe79a3d14e69cda4a86"
+    url "https://github.com/gobuffalo/buffalo-pop/releases/download/v2.3.0/buffalo-pop_2.3.0_darwin_amd64.tar.gz"
+    sha256 "c82801dbebe395e79067630c9ee6554481af451483a791408023580801095f9e"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/gobuffalo/buffalo-pop/releases/download/v2.2.0/buffalo-pop_2.2.0_linux_amd64.tar.gz"
-      sha256 "567ed2cc2eb019e569f1009d668b9196f8f437658e28cba7cd6d2c444704b9a8"
+      url "https://github.com/gobuffalo/buffalo-pop/releases/download/v2.3.0/buffalo-pop_2.3.0_linux_amd64.tar.gz"
+      sha256 "19c795c78f6ddf42084ab8dfd9dd477c8cb9365c18b6a33db63085f73eb2d394"
     end
   end
 
