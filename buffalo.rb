@@ -2,26 +2,24 @@
 class Buffalo < Formula
   desc ""
   homepage ""
-  version "0.16.17"
+  version "0.16.18"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gobuffalo/buffalo/releases/download/v0.16.17/buffalo_0.16.17_Darwin_x86_64.tar.gz"
-    sha256 "31973a20c73f17840d99d495c536c9cd3d3433de831dc670538d0e20555b2871"
-  elsif OS.linux?
-    if Hardware::CPU.intel?
-      url "https://github.com/gobuffalo/buffalo/releases/download/v0.16.17/buffalo_0.16.17_Linux_x86_64.tar.gz"
-      sha256 "4c52c2325a968b2cf840962df211fbd7e34dd92f7a552c7fa6c746e5c5c04f09"
-    end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/gobuffalo/buffalo/releases/download/v0.16.17/buffalo_0.16.17_Linux_arm64.tar.gz"
-        sha256 "69f21b42ad2a08671d6595b3117d532fef05b3350978553ac6ed8eef5f830260"
-      else
-        url "https://github.com/gobuffalo/buffalo/releases/download/v0.16.17/buffalo_0.16.17_Linux_armv6.tar.gz"
-        sha256 "de9d1fdb8f0c06b1cc2ae775513c4fcb4a3ec2f937ce917c28ac2eb31d6fb7fb"
-      end
-    end
+    url "https://github.com/gobuffalo/buffalo/releases/download/v0.16.18/buffalo_0.16.18_Darwin_x86_64.tar.gz"
+    sha256 "7b7e22e553e759ff53ebbf6cd286119960379a2cf5571aef400ac089906450cf"
+  end
+  if OS.linux? && Hardware::CPU.intel?
+    url "https://github.com/gobuffalo/buffalo/releases/download/v0.16.18/buffalo_0.16.18_Linux_x86_64.tar.gz"
+    sha256 "b73b61d91eaa016b641f8b3561c9c2ad21939d1d10623b534fe6b05954705a8d"
+  end
+  if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
+    url "https://github.com/gobuffalo/buffalo/releases/download/v0.16.18/buffalo_0.16.18_Linux_armv6.tar.gz"
+    sha256 "7e33430e27591c368e8df524fcf145fea1f3cda9dff644bb597828e3657f870f"
+  end
+  if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+    url "https://github.com/gobuffalo/buffalo/releases/download/v0.16.18/buffalo_0.16.18_Linux_arm64.tar.gz"
+    sha256 "bb9ce6d5452fbdbb4b5aa7945412b8198609824b9b68ea1dca515616db66fff6"
   end
 
   def install
