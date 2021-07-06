@@ -5,24 +5,29 @@
 class Buffalo < Formula
   desc ""
   homepage ""
-  version "0.16.23"
+  version "0.16.25-pre"
   bottle :unneeded
 
-  if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/gobuffalo/buffalo/releases/download/v0.16.23/buffalo_0.16.23_Darwin_x86_64.tar.gz"
-    sha256 "95a3ed8e99a942f5117766cd2f82f8be4a88131307bc1493f4f28ca0efd4ded5"
+  on_macos do
+    if Hardware::CPU.intel?
+      url "https://github.com/gobuffalo/buffalo/releases/download/v0.16.25-pre/buffalo_0.16.25-pre_Darwin_x86_64.tar.gz"
+      sha256 "23b39c79e2853311ac394042bbb1a294a2bd3b2e8dda3c8e3af03d47b118ded4"
+    end
   end
-  if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/gobuffalo/buffalo/releases/download/v0.16.23/buffalo_0.16.23_Linux_x86_64.tar.gz"
-    sha256 "603258ee05ab9b8489bd93f41222132cb0a1ce9c6784c3f066b39af6137daffa"
-  end
-  if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/gobuffalo/buffalo/releases/download/v0.16.23/buffalo_0.16.23_Linux_armv6.tar.gz"
-    sha256 "2246fe42d4092d0c9f9aa2e786275cc7693693b4d128c0922534b2f214631c5f"
-  end
-  if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/gobuffalo/buffalo/releases/download/v0.16.23/buffalo_0.16.23_Linux_arm64.tar.gz"
-    sha256 "b47188b3a2147387a77f8bee69760bdeecb75e47799870304a4f40a15103d2bb"
+
+  on_linux do
+    if Hardware::CPU.intel?
+      url "https://github.com/gobuffalo/buffalo/releases/download/v0.16.25-pre/buffalo_0.16.25-pre_Linux_x86_64.tar.gz"
+      sha256 "cdd1710960d21571f1981f73271bc092a915f3dac13e9cff05ac61ce97b77eaa"
+    end
+    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
+      url "https://github.com/gobuffalo/buffalo/releases/download/v0.16.25-pre/buffalo_0.16.25-pre_Linux_armv6.tar.gz"
+      sha256 "a0bd35ee0a1dbdb41a881ec761b382941ee36953a91bc7513e7716f4bbf52769"
+    end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/gobuffalo/buffalo/releases/download/v0.16.25-pre/buffalo_0.16.25-pre_Linux_arm64.tar.gz"
+      sha256 "79e5a6541f303d4521d7716c8b8a2f6f013051f3534a145043dc1a038b7812d4"
+    end
   end
 
   def install
