@@ -5,28 +5,32 @@
 class Buffalo < Formula
   desc ""
   homepage ""
-  version "0.16.27"
+  version "0.17.0-alpha.2"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gobuffalo/buffalo/releases/download/v0.16.27/buffalo_0.16.27_Darwin_x86_64.tar.gz"
-      sha256 "e989c368f92bb416c7fa8cd5f6f329ddede503cbbd6d9bac4fec434ddaf8fe55"
+      url "https://github.com/gobuffalo/cli/releases/download/v0.17.0-alpha.2/cli_0.17.0-alpha.2_Darwin_x86_64.tar.gz"
+      sha256 "0bf0b40429daed6e518e4c3c3ccbfad6ea20a07b508136f077ad90df2ec32c1a"
+    end
+    if Hardware::CPU.arm?
+      url "https://github.com/gobuffalo/cli/releases/download/v0.17.0-alpha.2/cli_0.17.0-alpha.2_Darwin_arm64.tar.gz"
+      sha256 "af51ac40cd0d3b9ff52889040d74f0a0986e8e65204aea43e5cfc803c9e9eda2"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/gobuffalo/buffalo/releases/download/v0.16.27/buffalo_0.16.27_Linux_x86_64.tar.gz"
-      sha256 "34788f5766fc93436e7b2169205bddc7cb398e99187a336d4612cf2fefd8fdc4"
+      url "https://github.com/gobuffalo/cli/releases/download/v0.17.0-alpha.2/cli_0.17.0-alpha.2_Linux_x86_64.tar.gz"
+      sha256 "394e9c44603adec5a0b673f92171e4b424d2d4ae60acb50fb4ab25e513aad0cf"
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/gobuffalo/buffalo/releases/download/v0.16.27/buffalo_0.16.27_Linux_armv6.tar.gz"
-      sha256 "96dd1bca786fe5bfe5039620487fc582951c89e888a3bf2fc7821809db9ff3a0"
+      url "https://github.com/gobuffalo/cli/releases/download/v0.17.0-alpha.2/cli_0.17.0-alpha.2_Linux_armv6.tar.gz"
+      sha256 "3dc4213cb78c95ba51ec874926afc4d751f62e850d031e0e9305b3586d6ac554"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gobuffalo/buffalo/releases/download/v0.16.27/buffalo_0.16.27_Linux_arm64.tar.gz"
-      sha256 "1c3e7fd89a9e636f6cf4afd9a9627f3eb86169c6044c06dc96275198049efe0a"
+      url "https://github.com/gobuffalo/cli/releases/download/v0.17.0-alpha.2/cli_0.17.0-alpha.2_Linux_arm64.tar.gz"
+      sha256 "1acb74d9e31ea4e22f76207352fce14fd6fe294f4646113034928911004db016"
     end
   end
 
