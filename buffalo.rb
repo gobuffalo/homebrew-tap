@@ -5,32 +5,32 @@
 class Buffalo < Formula
   desc ""
   homepage ""
-  version "0.17.0-alpha.3"
+  version "0.17.1"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gobuffalo/cli/releases/download/v0.17.0-alpha.3/cli_0.17.0-alpha.3_Darwin_x86_64.tar.gz"
-      sha256 "ebacd06c1868ca55437c8e15c9c8e4b2ba36291d5a99ab780baaea02fff111e9"
+      url "https://github.com/gobuffalo/cli/releases/download/v0.17.1/buffalo_0.17.1_Darwin_x86_64.tar.gz"
+      sha256 "d2190328c2c045db2b05c25181d8ec3464ffca6845a09a81b6fd8ba5f0a0a94e"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gobuffalo/cli/releases/download/v0.17.0-alpha.3/cli_0.17.0-alpha.3_Darwin_arm64.tar.gz"
-      sha256 "91dd1b40167b8e9891ea2a164d5a0f014aef4ea087c21ac1af8b8e251eca652e"
+      url "https://github.com/gobuffalo/cli/releases/download/v0.17.1/buffalo_0.17.1_Darwin_arm64.tar.gz"
+      sha256 "fb15ec5a7408aa74a6305597438613c4536d3289c1a8c7d049d1d6bbbbc4ff94"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/gobuffalo/cli/releases/download/v0.17.0-alpha.3/cli_0.17.0-alpha.3_Linux_x86_64.tar.gz"
-      sha256 "c8b1b624f2f05e1cab9449a6f6d602d8913f21a621f56a960609095e4718a7c0"
+      url "https://github.com/gobuffalo/cli/releases/download/v0.17.1/buffalo_0.17.1_Linux_x86_64.tar.gz"
+      sha256 "c0cc1187a49a5f38eca5912be523ce83f0bc28eb00faa0db55741b78977474af"
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/gobuffalo/cli/releases/download/v0.17.0-alpha.3/cli_0.17.0-alpha.3_Linux_armv6.tar.gz"
-      sha256 "c0246e8df8a4f7fa8ef555b9037f03dd50891e4d5a88097339ec26bb163edc46"
+      url "https://github.com/gobuffalo/cli/releases/download/v0.17.1/buffalo_0.17.1_Linux_armv6.tar.gz"
+      sha256 "282d9657ebe86fa79d8ed78cedf46b3634666c2a0aea438ee76712a496c1edfe"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gobuffalo/cli/releases/download/v0.17.0-alpha.3/cli_0.17.0-alpha.3_Linux_arm64.tar.gz"
-      sha256 "5231d71794f251de743372e0787fa7eef90f8693914d36b4aae344a204c933c5"
+      url "https://github.com/gobuffalo/cli/releases/download/v0.17.1/buffalo_0.17.1_Linux_arm64.tar.gz"
+      sha256 "9f6874bde2cb0a73556e91422e05ab039e7b6ae2698684111e0ed7015ef2cf93"
     end
   end
 
