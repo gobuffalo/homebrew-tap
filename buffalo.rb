@@ -5,32 +5,32 @@
 class Buffalo < Formula
   desc ""
   homepage ""
-  version "0.17.1"
+  version "0.17.2"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gobuffalo/cli/releases/download/v0.17.1/buffalo_0.17.1_Darwin_x86_64.tar.gz"
-      sha256 "d2190328c2c045db2b05c25181d8ec3464ffca6845a09a81b6fd8ba5f0a0a94e"
+      url "https://github.com/gobuffalo/cli/releases/download/v0.17.2/buffalo_0.17.2_Darwin_x86_64.tar.gz"
+      sha256 "7d712436658c0392349527c89d953ea6d196d43726396d2eca62b0926aef4704"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gobuffalo/cli/releases/download/v0.17.1/buffalo_0.17.1_Darwin_arm64.tar.gz"
-      sha256 "fb15ec5a7408aa74a6305597438613c4536d3289c1a8c7d049d1d6bbbbc4ff94"
+      url "https://github.com/gobuffalo/cli/releases/download/v0.17.2/buffalo_0.17.2_Darwin_arm64.tar.gz"
+      sha256 "78d00d5d6c7945c7218d852958f45438945513da456d2ad01311f81acc815316"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/gobuffalo/cli/releases/download/v0.17.1/buffalo_0.17.1_Linux_x86_64.tar.gz"
-      sha256 "c0cc1187a49a5f38eca5912be523ce83f0bc28eb00faa0db55741b78977474af"
+      url "https://github.com/gobuffalo/cli/releases/download/v0.17.2/buffalo_0.17.2_Linux_x86_64.tar.gz"
+      sha256 "9aabd69935936a5845b776108a45fcb3f3af9e64facd79a0f361c89c9cf69a67"
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/gobuffalo/cli/releases/download/v0.17.1/buffalo_0.17.1_Linux_armv6.tar.gz"
-      sha256 "282d9657ebe86fa79d8ed78cedf46b3634666c2a0aea438ee76712a496c1edfe"
+      url "https://github.com/gobuffalo/cli/releases/download/v0.17.2/buffalo_0.17.2_Linux_armv6.tar.gz"
+      sha256 "c6e8fc4fff2fbb50c613df02e6f40206ddd0b5ca621ad689a38ab5927a88f01e"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gobuffalo/cli/releases/download/v0.17.1/buffalo_0.17.1_Linux_arm64.tar.gz"
-      sha256 "9f6874bde2cb0a73556e91422e05ab039e7b6ae2698684111e0ed7015ef2cf93"
+      url "https://github.com/gobuffalo/cli/releases/download/v0.17.2/buffalo_0.17.2_Linux_arm64.tar.gz"
+      sha256 "65aa62e5812426210b87f088e840d816817ada1081ae601cd83b66593b3dcbdd"
     end
   end
 
