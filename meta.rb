@@ -2,8 +2,7 @@
 class Meta < Formula
   desc ""
   homepage ""
-  version "2.0.1"
-  bottle :unneeded
+  version "2.0.1"  
 
   if OS.mac?
     url "https://github.com/gobuffalo/meta/releases/download/v2.0.1/meta_2.0.1_Darwin_x86_64.tar.gz"

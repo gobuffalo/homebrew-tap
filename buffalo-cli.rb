@@ -3,7 +3,6 @@ class BuffaloCli < Formula
   desc ""
   homepage ""
   version "2.0.0-alpha.15"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/gobuffalo/buffalo-cli/releases/download/v2.0.0-alpha.15/buffalo-cli_2.0.0-alpha.15_Darwin_x86_64.tar.gz"

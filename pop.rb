@@ -6,7 +6,6 @@ class Pop < Formula
   desc "A Tasty Treat For All Your Database Needs"
   homepage "https://gobuffalo.io/docs/db/getting-started"
   version "5.3.4"
-  bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/gobuffalo/pop/releases/download/v5.3.4/pop_5.3.4_darwin_amd64.tar.gz"

@@ -2,8 +2,7 @@
 class Packr < Formula
   desc ""
   homepage ""
-  version "2.8.1"
-  bottle :unneeded
+  version "2.8.1"  
 
   if OS.mac?
     url "https://github.com/gobuffalo/packr/releases/download/v2.8.1/packr_2.8.1_darwin_amd64.tar.gz"

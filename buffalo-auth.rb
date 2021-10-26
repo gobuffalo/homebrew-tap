@@ -3,7 +3,6 @@ class BuffaloAuth < Formula
   desc ""
   homepage ""
   version "1.3.1"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/gobuffalo/buffalo-auth/releases/download/v1.3.1/buffalo-auth_1.3.1_Darwin_x86_64.tar.gz"
