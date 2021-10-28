@@ -3,7 +3,6 @@ class Release < Formula
   desc ""
   homepage ""
   version "1.15.0"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/gobuffalo/release/releases/download/v1.15.0/release_1.15.0_darwin_amd64.tar.gz"

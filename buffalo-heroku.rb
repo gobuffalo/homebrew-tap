@@ -3,7 +3,6 @@ class BuffaloHeroku < Formula
   desc ""
   homepage ""
   version "1.0.9"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/gobuffalo/buffalo-heroku/releases/download/v1.0.9/buffalo-heroku_1.0.9_darwin_amd64.tar.gz"

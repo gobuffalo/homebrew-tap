@@ -6,7 +6,6 @@ class Buffalo < Formula
   desc ""
   homepage ""
   version "0.17.5"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?

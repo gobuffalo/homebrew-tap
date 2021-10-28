@@ -3,7 +3,6 @@ class Shoulders < Formula
   desc ""
   homepage ""
   version "1.2.0"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/gobuffalo/shoulders/releases/download/v1.2.0/shoulders_1.2.0_darwin_amd64.tar.gz"
