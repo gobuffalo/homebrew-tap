@@ -3,7 +3,6 @@ class Here < Formula
   desc ""
   homepage ""
   version "0.6.2"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/gobuffalo/here/releases/download/v0.6.2/here_0.6.2_Darwin_x86_64.tar.gz"

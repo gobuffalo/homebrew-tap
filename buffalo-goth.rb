@@ -3,7 +3,6 @@ class BuffaloGoth < Formula
   desc ""
   homepage ""
   version "1.3.0"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/gobuffalo/buffalo-goth/releases/download/v1.3.0/buffalo-goth_1.3.0_Darwin_x86_64.tar.gz"

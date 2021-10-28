@@ -3,7 +3,6 @@ class Clara < Formula
   desc ""
   homepage ""
   version "2.0.2"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/gobuffalo/clara/releases/download/v2.0.2/clara_2.0.2_Darwin_x86_64.tar.gz"

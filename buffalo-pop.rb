@@ -3,7 +3,6 @@ class BuffaloPop < Formula
   desc "Buffalo plugin to work with gobuffalo/pop"
   homepage ""
   version "2.3.0"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/gobuffalo/buffalo-pop/releases/download/v2.3.0/buffalo-pop_2.3.0_darwin_amd64.tar.gz"

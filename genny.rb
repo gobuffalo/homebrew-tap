@@ -3,7 +3,6 @@ class Genny < Formula
   desc ""
   homepage ""
   version "0.6.0"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/gobuffalo/genny/releases/download/v0.6.0/genny_0.6.0_Darwin_x86_64.tar.gz"
