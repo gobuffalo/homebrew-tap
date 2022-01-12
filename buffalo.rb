@@ -5,20 +5,20 @@
 class Buffalo < Formula
   desc ""
   homepage ""
-  version "0.18.1"
+  version "0.18.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gobuffalo/cli/releases/download/v0.18.1/buffalo_0.18.1_Darwin_x86_64.tar.gz"
-      sha256 "db98e16071b43e01817542a2cd94255761ef78c6b52a4b82a656b76f9318c2e5"
+      url "https://github.com/gobuffalo/cli/releases/download/v0.18.2/buffalo_0.18.2_Darwin_x86_64.tar.gz"
+      sha256 "faeec26da9da793e7f9b2cb3919057252b8b59eb9539f07a7cc16ffa669ab573"
 
       def install
         bin.install "buffalo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gobuffalo/cli/releases/download/v0.18.1/buffalo_0.18.1_Darwin_arm64.tar.gz"
-      sha256 "6f49ea7ebc5b68492459c9c8b5e02b335a9790ef8ba57bba0e483f5a6218c4ce"
+      url "https://github.com/gobuffalo/cli/releases/download/v0.18.2/buffalo_0.18.2_Darwin_arm64.tar.gz"
+      sha256 "2dc88668f19d7642f1454564d4b53bd4f3a0a35914f70e569f4b5f6bc16c87e4"
 
       def install
         bin.install "buffalo"
@@ -27,25 +27,25 @@ class Buffalo < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/gobuffalo/cli/releases/download/v0.18.1/buffalo_0.18.1_Linux_x86_64.tar.gz"
-      sha256 "d2aa023f1294bee1f0c3d84941966a6158212b9b765dbbbb0414f35b23aa5ef3"
-
-      def install
-        bin.install "buffalo"
-      end
-    end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gobuffalo/cli/releases/download/v0.18.1/buffalo_0.18.1_Linux_arm64.tar.gz"
-      sha256 "5f8d2bb499989ae307a0ad9f496413659bd8d283a9a863b2e999c58960535ee4"
+      url "https://github.com/gobuffalo/cli/releases/download/v0.18.2/buffalo_0.18.2_Linux_arm64.tar.gz"
+      sha256 "cea87bc3cf75099638503cc06b308677ecf801661953d7311b3e87f43ac59a8a"
 
       def install
         bin.install "buffalo"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/gobuffalo/cli/releases/download/v0.18.1/buffalo_0.18.1_Linux_armv6.tar.gz"
-      sha256 "4e77d5c105634b60827ab11812031f5acd128fb12849ccbda3f07ed11d23ebb2"
+      url "https://github.com/gobuffalo/cli/releases/download/v0.18.2/buffalo_0.18.2_Linux_armv6.tar.gz"
+      sha256 "404025e8f965752b09602ac5ea0cb6d4bea38739147a8b0742f45867834c4410"
+
+      def install
+        bin.install "buffalo"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/gobuffalo/cli/releases/download/v0.18.2/buffalo_0.18.2_Linux_x86_64.tar.gz"
+      sha256 "aad0b2140f679778d7a96ff67862998d2c9955d0d8e5cb088dafffd33eef7a6d"
 
       def install
         bin.install "buffalo"
