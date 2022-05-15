@@ -5,18 +5,35 @@
 class Pop < Formula
   desc "A Tasty Treat For All Your Database Needs"
   homepage "https://gobuffalo.io/docs/db/getting-started"
-  version "5.3.4"
+  version "6.0.3"
 
-  if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/gobuffalo/pop/releases/download/v5.3.4/pop_5.3.4_darwin_amd64.tar.gz"
-    sha256 "d79b7b9068717aaeee5bd303564e90423bbc1d9cfafbc14cd761bc901cf6aa9e"
-  end
-  if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/gobuffalo/pop/releases/download/v5.3.4/pop_5.3.4_linux_amd64.tar.gz"
-    sha256 "3bd56415ebca37f74b175f120dce8f518424f6ba7fe82af508dc55766f7bcb2c"
+  on_macos do
+    if Hardware::CPU.intel?
+      url "https://github.com/gobuffalo/pop/releases/download/v6.0.3/pop_6.0.3_darwin_amd64.tar.gz"
+      sha256 "c41aa3e60f79e05e6aca62a81af069bd784d9bd06fbec69300fc855ff226699c"
+
+      def install
+        bin.install "soda"
+      end
+    end
+    if Hardware::CPU.arm?
+      url "https://github.com/gobuffalo/pop/releases/download/v6.0.3/pop_6.0.3_darwin_arm64.tar.gz"
+      sha256 "e4ba7d2bb0625fb394234fed29982f31c4b29cfec277dc8546ca1163ec638e20"
+
+      def install
+        bin.install "soda"
+      end
+    end
   end
 
-  def install
-    bin.install "pop"
+  on_linux do
+    if Hardware::CPU.intel?
+      url "https://github.com/gobuffalo/pop/releases/download/v6.0.3/pop_6.0.3_linux_amd64.tar.gz"
+      sha256 "ace6186efbba41c615474b0555aa042c9a573c78e04e0da44951523ccc6c169e"
+
+      def install
+        bin.install "soda"
+      end
+    end
   end
 end
