@@ -5,20 +5,20 @@
 class Clara < Formula
   desc ""
   homepage ""
-  version "2.0.5"
+  version "2.0.9-pre2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gobuffalo/clara/releases/download/v2.0.5/clara_2.0.5_Darwin_x86_64.tar.gz"
-      sha256 "18879a58fae6777f33a1a146b5160f1b135086dea1958533359dcc1a277f4adc"
+      url "https://github.com/gobuffalo/clara/releases/download/v2.0.9-pre2/clara_2.0.9-pre2_Darwin_x86_64.tar.gz"
+      sha256 "c85ee76e177d873817b60b4aad82932814ed8ba6aba15374ceaa11a36f7083ae"
 
       def install
         bin.install "clara"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gobuffalo/clara/releases/download/v2.0.5/clara_2.0.5_Darwin_arm64.tar.gz"
-      sha256 "1b19c3b5e378d51981f2273b3b61f795bd67b57b63607d56969c88a0152bd06b"
+      url "https://github.com/gobuffalo/clara/releases/download/v2.0.9-pre2/clara_2.0.9-pre2_Darwin_arm64.tar.gz"
+      sha256 "b60158205b1aac9bae7b53b0ab635877223af996c1bf19cca7d17726f4274474"
 
       def install
         bin.install "clara"
@@ -28,24 +28,24 @@ class Clara < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gobuffalo/clara/releases/download/v2.0.5/clara_2.0.5_Linux_arm64.tar.gz"
-      sha256 "d2fa352e3ad2b5f150833014a041c30f7e5d5631bbcd20dd385776acc3ea4dbd"
+      url "https://github.com/gobuffalo/clara/releases/download/v2.0.9-pre2/clara_2.0.9-pre2_Linux_arm64.tar.gz"
+      sha256 "70b3a15a154e1b9f6a048d3c136d4c8fbda3bb2e089a5ef1cd40dcc33ad4cd80"
 
       def install
         bin.install "clara"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/gobuffalo/clara/releases/download/v2.0.5/clara_2.0.5_Linux_armv6.tar.gz"
-      sha256 "531d5cfcbbf8dd1cee9eac70a53ff6dad879efeffa5a2d0fabefb34914f90937"
+      url "https://github.com/gobuffalo/clara/releases/download/v2.0.9-pre2/clara_2.0.9-pre2_Linux_armv6.tar.gz"
+      sha256 "8b8b24d65f2fbf74cde2dd30a2c8caa1db4c0584b3834bcdf34d8dd467b0410e"
 
       def install
         bin.install "clara"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/gobuffalo/clara/releases/download/v2.0.5/clara_2.0.5_Linux_x86_64.tar.gz"
-      sha256 "5670850bfb73babc3313062b12a14a0294b77c5ecde1321ceceed64044c6bb7a"
+      url "https://github.com/gobuffalo/clara/releases/download/v2.0.9-pre2/clara_2.0.9-pre2_Linux_x86_64.tar.gz"
+      sha256 "d4694dddb5a339ecb5fbd9bbc9c0b7b651616129bc0ad7f42dc40f153ba0f9e6"
 
       def install
         bin.install "clara"
